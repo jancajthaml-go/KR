@@ -13,12 +13,14 @@ kr.Search("GEEKS FOR GEEKS", "GEEK")
 ### Performance ###
 
 ```
-BenchmarkHammingParallel-4    300000000           4.25 ns/op
-BenchmarkHammingSerial-4      200000000           8.77 ns/op
+BenchmarkKarpRabinSmall-4          30000000   54.2 ns/op   8 B/op  1 allocs/op
+BenchmarkKarpRabinLarge-4          10000000    174 ns/op  24 B/op  2 allocs/op
+BenchmarkKarpRabinSmallParallel-4  50000000   28.7 ns/op   8 B/op  1 allocs/op
+BenchmarkKarpRabinLargeParallel-4  20000000   85.5 ns/op  24 B/op  2 allocs/op
 ```
 
-test on your own by running `make benchmark`
+verify your performance by running `make benchmark`
 
 ## Resources
 
-* [Wikipedia - Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance)
+* [Wikipedia - Rabin–Karp algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
