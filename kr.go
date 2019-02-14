@@ -5,6 +5,7 @@
 //
 package kr
 
+// Search for pattern in given input and returns slice of matche indicies
 func Search(input, pattern string) []int {
 	var M = len(pattern)
 	var N = len(input)
